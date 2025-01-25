@@ -19,3 +19,67 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@layer base {
+  body {
+    @apply h-screen font-serif text-gray-900 bg-gray-100;
+  }
+}
+
+@layer components {
+  /* header */
+  .header {
+    @apply h-[10vh] flex items-center px-10 py-4 md:px-20 text-lg justify-between;
+  }
+  .header-logo {
+    @apply  md:text-2xl;
+  }
+  .header-inquiry {
+    @apply hidden font-medium text-[#FFFFFF] md:block w-36 h-10 rounded-3xl bg-gradient-to-r from-[#4DFBFB] to-[#788EFF] ;
+  }
+  .header-user {
+    @apply block md:hidden;
+  }
+  .header > ul {
+    @apply justify-end flex-1 hidden space-x-5 md:flex;
+  }
+
+  /* main {
+    @apply relative h-[90vh];
+  }
+ */
+
+
+   /* text container */
+
+   .bottleContainer {
+    @apply flex flex-col h-full px-2 py-28 md:px-52;
+  }
+  
+  .bottleContainer-middle {
+    @apply grid flex-1 place-items-center;
+  }
+
+  .mid-circle {
+    @apply flex place-items-center rounded-full bg-gradient-to-r from-[#4DFBFB] to-[#788EFF] 
+  }
+
+
+   /* bottle it like barcelona :: */
+   /* .bottleWrapper {
+    @apply absolute top-0 left-0 grid w-full text-center place-items-center;
+  }
+  .bottle {
+    @apply  h-[593px] w-[186px]  object-contain;
+  } */
+ 
+
+  .footer {
+    @apply h-[10vh] flex items-center px-10 py-4 md:px-20 text-lg justify-between;
+  }
+
+  .footer > ul {
+    @apply justify-end flex-1 hidden space-x-5 md:flex;
+  }
+}
