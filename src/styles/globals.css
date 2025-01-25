@@ -45,14 +45,6 @@ body {
     @apply justify-end flex-1 hidden space-x-5 md:flex;
   }
 
-  /* main {
-    @apply relative h-[90vh];
-  }
- */
-
-
-   /* text container */
-
    .bottleContainer {
     @apply flex flex-col h-full px-2 py-28 md:px-52;
   }
@@ -64,15 +56,6 @@ body {
   .mid-circle {
     @apply flex place-items-center rounded-full bg-gradient-to-r from-[#4DFBFB] to-[#788EFF] 
   }
-
-
-   /* bottle it like barcelona :: */
-   /* .bottleWrapper {
-    @apply absolute top-0 left-0 grid w-full text-center place-items-center;
-  }
-  .bottle {
-    @apply  h-[593px] w-[186px]  object-contain;
-  } */
  
 
   .footer {
